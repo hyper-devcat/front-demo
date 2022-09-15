@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c0ec4b33c7.js" crossorigin="anonymous"></script>
+    <title>Contactez-nous</title>
+    <style>
+        .contact-header img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        } 
+    </style>
+</head>
+<body>
+ <!-- ============== nav bar ================ -->
+ <nav class="navbar navbar-expand-lg sticky-top">
+  <a class="navbar-brand" href="index.html"><img src="img/logo-fond.png" alt="Logo HotelCop"
+      title="Retour a la page d'accueil"></a>
+  <button class="navbar-toggler bg-light navbar-light" type="button" data-toggle="collapse"
+    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-5"><a class="nav-link active" href="rooms.html">Chambres<span class="sr-only">(En
+            cours)</span></a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="spa.html">SPA</a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact & Accès</a></li>
+    </ul>
+
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" name="q" placeholder="Rechercher..." aria-label="Search"
+        size="10">
+      <button class="btn btn-outline-light my-2 my-sm-0 fas fa-search" type="submit"></button>
+    </form>
+    <span>
+      <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button">Réserver</a>
+      <a href="#">fr <img src="img/drapeau-france.png" alt="changer langue en français"></a>|<a href="#">en <img
+          src="img/drapeau-anglais.png" alt="turn language to english"></a>
+      <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button"><i
+          class="fas fa-shopping-cart"></i></a>
+    </span>
+  </div>
+</nav>
+<!-- ============== fin de nav bar ================ -->
+    <header>
+        <div class="contact-header" >
+            <img src="img/contact.jpg" alt="contact-header" style="height: 100%; width: 100%;">
+        </div>
+    </header>
+    <div>
+        <h2>Contact & Accès</h2>
+    </div>
+    <br>
+    
+    <section class="contact_area section_gap">
+            <div class="container">
+                <div id="mapBox" class="mapBox">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.64000716728!2d2.2998897158039715!3d48.865074708189965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1611153264983!5m2!1sfr!2sfr" width="800" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="lnr lnr-home"></i>
+                                <h6>HotelCop</h6>
+                                <p>1 avenue Montaigne, 75008 Paris</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-phone-handset"></i>
+                                <h6><a href="#">+33 1 23 45 67 89</a></h6>
+                                <p>Lundi-Vendredi 9h-0h</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-envelope"></i>
+                                <h6><a href="mailto:reservation@hotelcop.com">reservation@hotelcop.com</a></h6>
+                                <p>Contactez-nous!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <form class="row contact_form" id="contactForm">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="entreprise" name="entreprise" placeholder="Entrez votre entreprise" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="pays" name="^pays" placeholder="Entrez votre pays" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="sujet" name="sujet" placeholder="Entrez votre sujet" required>
+                                </div>
+                                <div class="form-group ">
+                                    <select name="Catégorie" class="form-select form-control" size="1" required> 
+                                    <option value="" selected>Sélectionnez la catégorie</option>
+                                    <option value="chambre">chambre</option>
+                                    <option value="restaurant">restaurant</option>
+                                    <option value="spa">spa</option>
+                                    <option value="ordregeneral">ordre général</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Entrez votre message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" value="submit" class="btn theme_btn button_hover">ENVOI</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- ============== footer ================ -->
+  <footer id="footerindex" class="footer table">
+    <div class="container-fluid row">
+      <!-- footer left -->
+      <div class="footer-left col-md-4">
+        <br>
+        <br>
+        <ul class="ulcache list-group">
+          <li>HotelCop</li>
+          <li>+33 1 23 45 67 89</li>
+          <li><a href="mailto:reservation@hotelcop.com">reservation@hotelcop.com</a></li>
+          <li><a href="contact.html" target="_blank">1 avenue Montaigne, 75008 Paris</a></li>
+        </ul>
+        <br>
+        <div class="suivez-nous-btn">
+          <p>
+            <a href="https://www.facebook.com/" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/" class="p-3"><span class="fa fa-twitter"></span></a>
+            <a href="https://www.instagram.com/" class="p-3"><span class="fa fa-instagram"></span></a>
+            <a href="https://vimeo.com/" class="p-3"><span class="fa fa-vimeo"></span></a>
+            <a href="https://www.youtube.com/" class="p-3"><span class="fa fa-youtube-play"></span></a>
+          </p>
+        </div>
+        <br>
+      </div>
+      <!-- footer center -->
+      <div class="footer-center col-md-4">
+        <a href="#">
+          <img src="img/logo-fond.png" alt="logo-fond">
+        </a>
+        <br>
+        <br>
+        <div>
+          <h3>Recevez notre newsletter</h3>
+          <p>Des offres exclusives, des inspirations inédites</p>
+          <input name="EMAIL" placeholder="Votre Adresse E-mail" type="email" style="width: 200px;">
+          <button type="submit" value="submit" style="background-color: #BB9746; color: palegoldenrod;">S'ABONNER</button>
+        </div>
+        <br>
+        <br>
+      </div>
+      <!-- footer right -->
+      <div class="footer-right col-md-4">
+        <div>
+          <br>
+          <br>
+          <ul class="ulcache list-group">
+            <li><a href="recrutement.html" target="_blank">Recrutement</a></li>
+            <li><a href="evenement.html" target="_blank">Événement</a></li>
+            <li><a href="about-us.html" target="_blank">À propos de nous</a></li>
+            <li><a href="presse.html" target="_blank">Presse</a></li>
+            <li><a href="news.html" target="_blank">Actualités</a></li>
+            <li><a href="opinion.html" target="_blank">Avis</a></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row footer-copyright">
+      <p class="col">
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> Tous droits réservés | GAteam |
+      </p>
+    </div>
+    <div class="row footer-law">
+      <div class="col footer-law-link">
+        <ul class="ulcache">
+          <li>
+            <a href="cgv.html" target="_blank">CGV</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="legal-notice.html" target="_blank">MENTIONS LÉGALES</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="site-map.html" target="_blank">PLAN DU SITE</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="#" onclick="javascript:window.print()">IMPRIMER LA PAGE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ============== fin de footer ================ -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,690 @@
+/* CHARGEMENT DES POLICES DU SITE */
+/* bodoni-moda-regular - latin */
+@font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/bodoni-moda-v1-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/bodoni-moda-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/bodoni-moda-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/bodoni-moda-v1-latin-regular.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+  
+  /* bodoni-moda-700 - latin */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/bodoni-moda-v1-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/bodoni-moda-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/bodoni-moda-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/bodoni-moda-v1-latin-700.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+  
+  /* bodoni-moda-800 - latin */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 800;
+    src: url('fonts/bodoni-moda-v1-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/bodoni-moda-v1-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/bodoni-moda-v1-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('fonts/bodoni-moda-v1-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/bodoni-moda-v1-latin-800.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+/* headland-one-regular - latin */
+@font-face {
+    font-family: 'Headland One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/headland-one-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/headland-one-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/headland-one-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/headland-one-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/headland-one-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/headland-one-v8-latin-regular.svg#HeadlandOne') format('svg'); /* Legacy iOS */
+  }
+/* ********************************************************************* */ 
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Headland One';
+    text-align: center;
+    background: #BB9746;
+    color: palegoldenrod;
+}
+.ulcache{
+    list-style: none;
+}
+/* NAVIGATION ET LIENS (a) */
+nav{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+nav a{
+    color: #fff;
+    padding: 10px;
+   
+}
+.nav-link:hover,nav a:nth-last-child(2):hover,nav a:nth-last-child(3):hover{
+    background-color: #bb9746;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#myTab a,#tabresto a{
+  color: #fff;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, #myTab a:hover, #tabresto a:hover{
+  background: rgba(0, 0, 0, 0.6);
+}
+.tabsheight{
+  height: 300px;
+}
+/* Page SPA */
+#figure-img1-spa, #figure-img2-spa{
+  position: relative;
+  overflow: hidden;
+}
+#figure-img1-spa img, #figure-img2-spa img{
+  display: block;
+  transition: 1s;
+}
+figcaption{
+  position: absolute;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  bottom: -34px;
+  transition: 0.5s;
+}
+#figure-img1-spa:hover figcaption, #figure-img2-spa:hover figcaption{
+  bottom: 0;
+}
+#figure-img1-spa:hover img, #figure-img2-spa:hover img{
+  transform: scale(1.2);
+}
+#figure-img1-spa:hover, #figure-img2-spa:hover{
+  cursor: zoom-in;
+}
+#ul-spa1 li:last-child, #ul-spa2 li:last-child,.price{
+  font-weight: bolder;
+  text-decoration:underline;
+  
+}
+
+#ul-spa1 li:last-child:hover, #ul-spa2 li:last-child:hover{
+  font-weight: bold;
+  text-decoration:none;
+}
+/* Fin du SPA */ 
+
+
+
+/* FIN NAVIGATION ET LIENS (a) */
+h1{
+    font-family: 'Bodoni Moda' ;
+    color: #D4CF99;
+}
+h2,h3{
+    font-family: 'Bodoni Moda';
+    font-style: italic;
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+video{
+    width: 100%; 
+}
+/* section carousel */
+  #section1, #section2{
+    margin: 15px;
+}
+.pad-0{
+    padding: 0;
+}
+.carouselindex{
+    height: 250px;
+    object-fit: cover;
+}
+
+/* min-width: 300px;
+    max-width: 350px; */
+
+.description{
+    border: ivory dotted 1px;
+    font-size: 13px;
+    min-height: 250px;
+}
+.description p{
+    padding: 10px;
+    text-align: justify;
+    color: palegoldenrod;
+}
+/*============== footer css ================*/
+.footer{
+    background-color: #434238;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #D4CF99;
+}
+.footer ul a{
+    font-family: 'Headland One';
+    color:  #756a4a;
+    font-size: 20px;
+}
+.footer ul{
+    color: #756a4a;
+    font-size: 20px;
+    font-family: 'Headland One';
+}
+.footer-left{
+    text-align: center;
+}
+.footer-center ul{
+    text-align: center;
+    padding-left: 0;
+}
+.footer-center h3{
+    text-transform: uppercase; 
+    color: burlywood;
+}
+.footer-right{
+    text-align: center;
+}
+
+.suivez-nous-btn a{
+  color: palegoldenrod;
+}
+.footer-copyright{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  color: grey;
+  padding: 0%;
+}
+.footer-law a{
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod;
+    padding: 0;
+}
+.footer-law-link{
+  display: flex;
+  justify-content: center;
+}
+.footer-law-link li a{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* fin de footer */
+
+
+/*============== contact_area css ================*/
+
+.section_gap {
+  padding-bottom: 120px;
+}
+
+.mapBox {
+  height: 420px;
+  margin-bottom: 80px;
+}
+
+.contact_info .info_item {
+  position: relative;
+  padding-left: 45px;
+}
+
+.contact_info .info_item i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f3c300;
+  font-weight: 600;
+}
+
+.contact_info .info_item h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.contact_info .info_item h6 a {
+  color: #222222;
+}
+
+.contact_info .info_item p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+}
+
+.contact_form .form-group {
+  margin-bottom: 10px;
+}
+
+.contact_form .form-group .form-control {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+
+.contact_form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-select{
+  font-size: 13px;
+  line-height: 26px;
+  width: 400px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+
+.contact_form .form-group .form-control.placeholder {
+  color: #999;
+}
+
+.contact_form .form-group .form-control:-moz-placeholder {
+  color: #999;
+}
+
+.contact_form .form-group .form-control::-moz-placeholder {
+  color: #999;
+}
+
+.contact_form .form-group .form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.contact_form .form-group textarea.form-control {
+  height: 295px;
+}
+
+.contact_form .theme_btn {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.theme_btn {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  background: #f3c300;
+  padding: 5px 30px;
+}
+
+/*============== Mention légales css ================*/
+
+.mention-legales-titre{
+  font-family: 'Bodoni Moda';
+  font-size: 40px;
+  color: #D4CF99;
+}
+
+.mention-legales-text{
+  font-family: 'Headland One';
+  font-size: 15px;
+  text-align: left;
+  color: palegoldenrod;
+  margin: 50px;
+}
+
+.grid h2{
+  font-weight: bold;
+}
+
+/*============== CGV css ================*/
+
+.cgv-titre{
+  font-family: 'Bodoni Moda';
+  font-size: 40px;
+  color: #D4CF99;
+}
+
+.grid p{
+  font-family: 'Headland One';
+  font-size: 15px;
+  text-align: left;
+  color: palegoldenrod;
+  margin: 50px;
+}
+
+/*============== contact css ================*/
+
+.contact-ul{
+  text-align: left;
+  padding-left: 80px;
+  list-style-type: "\1F44D"; 
+}
+
+/*==============  Actualités css ================*/
+
+.news-head h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.jumbotron{
+  background-color: #523714;
+}
+
+.jumbotron h2{
+  font-size: 30px;
+  padding-bottom: 40px;
+  color: #BB9746;
+}
+
+.jumbotron a{
+  background-color: #635D50;
+  border: coral;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: palegoldenrod;
+}
+
+.news-date {
+  color: black;
+  font-style: italic;
+}
+
+/*==============  Presse css ================*/
+.presse{
+  background-color: #E5D595;
+}
+
+.presse-date {
+  color: grey;
+  font-style: italic;
+}
+
+.presse p{
+  color: black;
+}
+
+#carouselrooms .carousel-inner img, #carouselrooms-double .carousel-inner img, #carousel-spa .carousel-inner img{
+  height: 900px;
+}
+
+/*==============  ??? css ================*/
+
+form .formulaire .name {
+    display: table-cell;
+    white-space: normal;
+    width: 100%;
+    color: #000000;
+    font-family: Montserrat Bold;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+}
+
+section{
+  display: block;
+}
+
+/*==============  plan-du-site css ================*/
+
+.menu{
+  text-align: left;
+  
+  color: black;
+  line-height: 2em;
+}
+.menu a{
+  color: palegoldenrod;
+}
+.menu1{
+  list-style: square;
+}
+.menu2{
+  list-style-type: circle;
+}
+.menu3{
+  list-style-type: disc;
+}
+.menu4{
+  list-style-type: upper-roman;
+}
+.menu4 a{
+  text-transform: capitalize;
+}
+
+/*==============  evenement css ================*/
+
+.text-evenement p{
+  text-align: justify;
+  word-break: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.video-evenement{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.evenement-contact i{
+  color: #523714;
+  font-size: 2em;
+}
+
+.evenement-contact{
+  margin-top: 30px;
+}
+
+.evenement-contact :hover{
+  color: gold;
+}
+
+/*==============  recrutement css ================*/
+
+.recrutement-form label{
+  color: #523714;
+  font-weight: bold;
+}
+
+.format-accepte{
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.form-part-1{
+  padding-bottom: 10px;
+}
+
+.custom-file-input:lang(fr)~.custom-file-label::after {
+    content: "Choisir";
+}
+
+.recrute-dossier span{
+  color: grey;
+}
+
+/*==============  avis css ================*/
+
+.avis-btn{
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  background: #f3c300;
+  padding: 5px 30px;
+}
+
+form{
+  text-align: left;
+}
+
+/* boîte des avis css */
+
+#xc {
+    padding: 0;
+    margin: 0 auto;
+}
+html,body {
+    height: 100%;
+}
+/* 最大的父盒子.img-avis */
+.img-avis {
+    /* 背景顏色 */
+    width: 100%;
+    height: 80%;
+    /* 父相 */
+    position: relative;
+    /* 開啟視距 */
+    perspective: 1000px;
+}
+/* 縮圖父盒子#xc */
+.img-avis>#xc {
+    width: 900px;
+    height: 100%;
+    /* 父相 */
+    position: relative;
+    /* 開啟3D */
+    transform-style: preserve-3d;
+}
+/* 縮圖 */
+.img-avis>#xc img {
+    width: 20%;
+    /* 子絕 */
+    position: absolute;
+    border: 1px dotted purple;
+}
+.img-avis #xc #jpg-01 {
+    /* 定位 */
+    top: 50px;
+    left: 100px;
+    /* 旋轉 */
+    transform: rotateZ(30deg);
+}
+.img-avis #xc #jpg-02 {
+    /* 定位 */
+    top: 200px;
+    left: 200px;
+    /* 旋轉 */
+    transform: rotateZ(-30deg);
+}
+.img-avis #xc #jpg-03 {
+    /* 定位 */
+    top: 100px;
+    left: 300px;
+    /* 旋轉 */
+    transform: rotateZ(10deg);
+}
+.img-avis #xc #jpg-04 {
+    /* 定位 */
+    top: 50px;
+    left: 500px;
+    /* 旋轉 */
+    transform: rotateZ(-20deg);
+}
+.img-avis #xc #jpg-05 {
+    /* 定位 */
+    top: 300px;
+    left: 250px;
+    /* 旋轉 */
+    transform: rotateZ(20deg);
+}
+.img-avis #xc #jpg-06 {
+    /* 定位 */
+    top: 290px;
+    left: 100px;
+    /* 旋轉 */
+    transform: rotateZ(-10deg);
+}
+.img-avis #xc #jpg-07 {
+    /* 定位 */
+    top: 280px;
+    left: 500px;
+    /* 旋轉 */
+    transform: rotateZ(30deg);
+}
+.img-avis #xc #jpg-08 {
+    /* 定位 */
+    top: 240px;
+    left: 650px;
+    /* 旋轉 */
+    transform: rotateZ(10deg);
+}
+.img-avis #xc #jpg-09 {
+    /* 定位 */
+    top: 250px;
+    left: 400px;
+    /* 旋轉 */
+    transform: rotateZ(-20deg);
+}
+.img-avis #xc #jpg-10{
+    /* 定位 */
+    top: 430px;
+    left: 320px;
+    /* 旋轉 */
+    transform: rotateZ(-10deg);
+}
+/* 大圖展示區域 */
+.img-avis>#bigimg {
+    /* 為了保證圖片形狀 和比例 父盒子不設定大小 靠圖片大小撐起來*/
+    /* 子絕 */
+    position: absolute;
+    /* 定位父盒子中間 */
+    top: 50%;
+    left: 50%;
+    /* css3 */
+    transform: translateX(-50%) translateY(-50%);
+    /* 最上層 */
+    z-index: 100;
+    /* 滑鼠未點選縮圖時隱藏 只隱藏 仍佔位 */
+    visibility: hidden;
+}
+/* 大圖 */
+.img-avis>#bigimg img {
+    /* 只設定一個高度 寬度等比例縮放 */
+    height: 400px;
+    /* img行內塊元素 預設與父盒子基線對齊 改成底線對齊 */
+    vertical-align: bottom;
+}
+
+

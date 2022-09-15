@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Notre restaurant, le Gustave Doré, 1 étoile sur le guide Michelin pour ravir vos papilles quel que soit le moment de la journée ">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/c0ec4b33c7.js" crossorigin="anonymous"></script>
+  <title>Restaurant HotelCop</title>
+</head>
+
+<body>
+  <!-- ============== nav bar ================ -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="index.html"><img src="img/logo-fond.png" alt="Logo HotelCop"
+        title="Retour a la page d'accueil"></a>
+    <button class="navbar-toggler bg-light navbar-light" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item mr-5"><a class="nav-link active" href="rooms.html">Chambres<span class="sr-only">(En
+              cours)</span></a></li>
+        <li class="nav-item mr-5"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="nav-item mr-5"><a class="nav-link" href="spa.html">SPA</a></li>
+        <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact & Accès</a></li>
+      </ul>
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" name="q" placeholder="Rechercher..." aria-label="Search"
+          size="10">
+        <button class="btn btn-outline-light my-2 my-sm-0 fas fa-search" type="submit"></button>
+      </form>
+      <span>
+        <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button">Réserver</a>
+        <a href="#">fr <img src="img/drapeau-france.png" alt="changer langue en français"></a>|<a href="#">en <img
+            src="img/drapeau-anglais.png" alt="turn language to english"></a>
+        <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button"><i
+            class="fas fa-shopping-cart"></i></a>
+      </span>
+    </div>
+  </nav>
+  <!-- ============== fin de nav bar ================ -->
+
+  <!-- ============== Début Header Texte Présentation & Carousel ================ -->
+  <header class="container">
+    <h1 class="my-5">Notre restaurant : "Le Gustave Doré"</h1>
+    <p class="my-5 text-justify">La famille de Gustave Doré descend à l'hôtel <strong>HotelCop</strong>, avenue
+      <strong>Montaigne</strong> à Paris, en septembre 1847 pour ce qui devait être un court séjour. Tandis que son père
+      s'absente, Doré part rencontrer Charles Philipon, directeur de la maison d'édition Aubert&Cie et fondateur des
+      journaux satiriques La Caricature (interdit par les lois sur la presse de 1835) et Le Charivari pour lui montrer
+      ses
+      nombreux travaux. Ces journaux ont dévoilé bon nombre d'illustrateurs dont Paul Gavarni et Honoré Daumier. Charles
+      Philipon propose alors un contrat de trois ans à Gustave Doré, âgé de 15 ans, lui permettant la réalisation d'une
+      page hebdomadaire de dessins dans le nouvel hebdomadaire Le Journal pour rire. Cet accord ne voit le jour qu'après
+      six mois de délibérations avec le père de Gustave toujours fortement opposé à ce que son fils devienne artiste. Il
+      donne finalement son approbation, notamment grâce à l'appui de madame Doré en faveur de son fils. La signature du
+      contrat est conditionnée à la poursuite de ses études et à une juste rétribution.
+    </p>
+
+    <div class="row">
+      <div class="col-12 col-md-12 mb-5 pad-0">
+        <div id="carousel-restaurant" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-restaurant" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-restaurant" data-slide-to="1"></li>
+            <li data-target="#carousel-restaurant" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/restaurant1.jpg" class="d-block w-100" alt="La salle de restaurant du 'Gustave Doré'">
+            </div>
+            <div class="carousel-item">
+              <img src="img/restaurant2.jpg" class="d-block w-100" alt="Photo de plat">
+            </div>
+            <div class="carousel-item">
+              <img src="img/restaurant3.jpg" class="d-block w-100" alt="Table dréssé pour le déjeuner">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel-restaurant" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-restaurant" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ============== Fin Header Texte Présentation & Carousel ================ -->
+
+  <!-- ============== Début Main Création Tabs + Texte Tabs ================ -->
+  <main class="container-fluid">
+    <h2 class="my-5">Que proposons-nous ?</h2>
+    <div class="row mx-5">
+      <div class="col-12 col-md-3 pt-5">
+        <div class="nav flex-column nav-pills" id="tabresto" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="pill-petit-dej-tab" data-toggle="pill" href="#pill-petit-dej" role="tab"
+            aria-controls="pill-petit-dej" aria-selected="true">Notre Petit Déjeuner</a>
+          <a class="nav-link" id="pill-menu-dej-tab" data-toggle="pill" href="#pill-menu-dej" role="tab"
+            aria-controls="pill-menu-dej" aria-selected="false">Notre Menu Déjeuner</a>
+          <a class="nav-link" id="pill-carte-tab" data-toggle="pill" href="#pill-carte" role="tab"
+            aria-controls="pill-carte" aria-selected="false">Notre Carte</a>
+          <a class="nav-link" id="pill-degust-tab" data-toggle="pill" href="#pill-degust" role="tab"
+            aria-controls="pill-degust" aria-selected="false">Notre Menu Dégustation (soir uniquement)</a>
+          <a class="nav-link" id="pill-vins-tab" data-toggle="pill" href="#pill-vins" role="tab"
+            aria-controls="pill-vins" aria-selected="false">Notre Carte des Vins</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="pill-petit-dej" role="tabpanel"
+            aria-labelledby="pill-petit-dej-tab">
+            <h3>Le petit déjeuner</h3>
+            <p>Notre petit déjeuner peut se composer de plusieurs manières et peut être servi en chambre ou au
+              restaurant:</p>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <ul class="ulcache text-justify">
+                  <li class="price my-2">Petit Déjeuner Continental:</li>
+                  <li>Boisson chaude (thé ou café)</li>
+                  <li> un panier de viennoiseries ainsi qu'un jus de fruit de votre choix
+                    parmi 10 jus différents fait avec amour selon la saison</li>
+                  <li class="price my-2">Prix: 25€</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4">
+                <ul class="ulcache text-justify">
+                  <li class="price my-2">
+                    Petit Déjeuner Américain:
+                  </li>
+                  <li>Le choix de plusieurs plats salés et sucrés (Pancakes aux myrtilles,
+                    muffins, gaufres, oeufs brouillés, bacon) et bien sûr du petit Déjeuner Continental.</li>
+                  <li class="price my-2">Prix:40€</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4">
+                <ul class="ulcache text-justify">
+                  <li class="price my-2">Notre buffet:</li>
+                  <li> Au choix parmi la séléction sans restrictions.</li>
+                  <li class="price my-2"> Prix: 60€</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pill-menu-dej" role="tabpanel" aria-labelledby="pill-menu-dej-tab">
+            <h3>Au Déjeuner</h3>
+            <p>Venez déguster au Gustave Doré notre menu déjeuner à midi, parfait si vous êtes préssés !</p>
+            <a class="ml-5 btn btn-warning mr-5" href="img/carte-dej.pdf" role="button" target="_blank">Voir le Menu</a>
+          </div>
+          <div class="tab-pane fade" id="pill-carte" role="tabpanel" aria-labelledby="pill-carte-tab">
+            <h3>Notre carte</h3>
+            <p>Notre carte est disponible tant le midi, l'après midi que le soir.</p>
+            <a class="ml-5 btn btn-warning mr-5" href="img/carte-menu.pdf" role="button" target="_blank">Voir notre
+              carte</a>
+          </div>
+          <div class="tab-pane fade" id="pill-degust" role="tabpanel" aria-labelledby="pill-degust-tab">
+            <h3>Le Menu dégustation</h3>
+            <p>Retrouvez ici notre menu dégustation servi au "Gustave Doré" au dîner uniquement</p>
+            <a class="ml-5 btn btn-warning mr-5" href="img/carte-degustation.pdf" role="button" target="_blank">Voir
+              notre Menu dégustation</a>
+          </div>
+          <div class="tab-pane fade" id="pill-vins" role="tabpanel" aria-labelledby="pill-vins-tab">
+            <h3>La carte des vins</h3>
+            <p>Nous proposons aussi de belles références pour tous les budgets sur notre carte des vins, laissez vous
+              tenter, vous ne serez pas déçu ! Demandez notre carte des vins complète au restaurant à notre sommelier.
+              Il se fera un plaisir de vous aider</p>
+            <a class="ml-5 btn btn-warning mr-5" href="img/carte-vins.pdf" role="button" target="_blank">Voir nos vins
+              au verre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ============== Fin Main Création Tabs + Texte Tabs ================ -->
+
+  <!-- ============== footer ================ -->
+  <footer id="footerindex" class="footer table">
+    <div class="container-fluid row">
+      <!-- footer left -->
+      <div class="footer-left col-md-4">
+        <br>
+        <br>
+        <ul class="ulcache list-group">
+          <li>HotelCop</li>
+          <li>+33 1 23 45 67 89</li>
+          <li><a href="mailto:reservation@hotelcop.com">reservation@hotelcop.com</a></li>
+          <li><a href="contact.html" target="_blank">1 avenue Montaigne, 75008 Paris</a></li>
+        </ul>
+        <br>
+        <div class="suivez-nous-btn">
+          <p>
+            <a href="https://www.facebook.com/" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/" class="p-3"><span class="fa fa-twitter"></span></a>
+            <a href="https://www.instagram.com/" class="p-3"><span class="fa fa-instagram"></span></a>
+            <a href="https://vimeo.com/" class="p-3"><span class="fa fa-vimeo"></span></a>
+            <a href="https://www.youtube.com/" class="p-3"><span class="fa fa-youtube-play"></span></a>
+          </p>
+        </div>
+        <br>
+      </div>
+      <!-- footer center -->
+      <div class="footer-center col-md-4">
+        <a href="#">
+          <img src="img/logo-fond.png" alt="logo-fond">
+        </a>
+        <br>
+        <br>
+        <div>
+          <h3>Recevez notre newsletter</h3>
+          <p>Des offres exclusives, des inspirations inédites</p>
+          <input name="EMAIL" placeholder="Votre Adresse E-mail" type="email" style="width: 200px;">
+          <button type="submit" value="submit"
+            style="background-color: #BB9746; color: palegoldenrod;">S'ABONNER</button>
+        </div>
+        <br>
+        <br>
+      </div>
+      <!-- footer right -->
+      <div class="footer-right col-md-4">
+        <div>
+          <br>
+          <br>
+          <ul class="ulcache list-group">
+            <li><a href="recrutement.html" target="_blank">Recrutement</a></li>
+            <li><a href="evenement.html" target="_blank">Événement</a></li>
+            <li><a href="about-us.html" target="_blank">À propos de nous</a></li>
+            <li><a href="presse.html" target="_blank">Presse</a></li>
+            <li><a href="news.html" target="_blank">Actualités</a></li>
+            <li><a href="opinion.html" target="_blank">Avis</a></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row footer-copyright">
+      <p class="col">
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> Tous droits réservés | GAteam |
+      </p>
+    </div>
+    <div class="row footer-law">
+      <div class="col footer-law-link">
+        <ul class="ulcache">
+          <li>
+            <a href="cgv.html" target="_blank">CGV</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="legal-notice.html" target="_blank">MENTIONS LÉGALES</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="site-map.html" target="_blank">PLAN DU SITE</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="#" onclick="javascript:window.print()">IMPRIMER LA PAGE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ============== fin de footer ================ -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

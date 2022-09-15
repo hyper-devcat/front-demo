@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le sauna de l'HotelCop est ouvert toute l'année. Venez profiter d'une expérience unique dans notre hôtel">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/c0ec4b33c7.js" crossorigin="anonymous"></script>
+  <title>Notre SPA</title>
+</head>
+
+<body>
+ <!-- ============== nav bar ================ -->
+ <nav class="navbar navbar-expand-lg sticky-top">
+  <a class="navbar-brand" href="index.html"><img src="img/logo-fond.png" alt="Logo HotelCop"
+      title="Retour a la page d'accueil"></a>
+  <button class="navbar-toggler bg-light navbar-light" type="button" data-toggle="collapse"
+    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-5"><a class="nav-link active" href="rooms.html">Chambres<span class="sr-only">(En
+            cours)</span></a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="spa.html">SPA</a></li>
+      <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact & Accès</a></li>
+    </ul>
+
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" name="q" placeholder="Rechercher..." aria-label="Search"
+        size="10">
+      <button class="btn btn-outline-light my-2 my-sm-0 fas fa-search" type="submit"></button>
+    </form>
+    <span>
+      <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button">Réserver</a>
+      <a href="#">fr <img src="img/drapeau-france.png" alt="changer langue en français"></a>|<a href="#">en <img
+          src="img/drapeau-anglais.png" alt="turn language to english"></a>
+      <a class="ml-3 btn btn-warning mr-3" href="reservation.html" role="button"><i
+          class="fas fa-shopping-cart"></i></a>
+    </span>
+  </div>
+</nav>
+<!-- ============== fin de nav bar ================ -->
+  <!-- Début du header -->
+  <header>
+    <div class="container my-5">
+      <h1 class="my-5">Venez vous prélasser dans notre SPA</h1>
+      <p class="text-justify">Pour son Spa, l'HotelCop a choisi <strong>Carita</strong>, spécialiste de l’anti-âge basé
+        sur une technologie de pointe et d’avant-garde, Carita signe sa différence et son originalité avec son concept
+        de beauté Globale, visage-corps-cheveux.
+      </p>
+      <p class="text-justify">
+        Un « glamour » sans ostentation, fait de raffinement, de <strong>sophistication</strong> et de
+        <strong>simplicité</strong>, qui se retrouve avec subtilité autant dans la matière, la texture des produits que
+        dans le service.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-12 mb-5 p-0">
+          <div id="carousel-spa" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-spa" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-spa" data-slide-to="1"></li>
+              <li data-target="#carousel-spa" data-slide-to="2"></li>
+              <li data-target="#carousel-spa" data-slide-to="3"></li>
+              <li data-target="#carousel-spa" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active p-0">
+                <img src="img/spa1.jpg" class="d-block w-100" alt="Notre Sauna">
+              </div>
+              <div class="carousel-item">
+                <img src="img/spa2.jpg" class="d-block w-100" alt="Massage aux fleurs">
+              </div>
+              <div class="carousel-item">
+                <img src="img/spa3.jpg" class="d-block w-100" alt="Huile de massage Carita">
+              </div>
+              <div class="carousel-item">
+                <img src="img/spa4.jpg" class="d-block w-100" alt="Baignoire pour bain de boue">
+              </div>
+              <div class="carousel-item">
+                <img src="img/spa5.jpg" class="d-block w-100" alt="Soin du visage">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-spa" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-spa" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Suivant</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Fin du header -->
+  <!-- ============== 1 ère section Soin oriental ================ -->
+  <h2>Ce que l'on vous propose</h2>
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <figure id="figure-img1-spa">
+          <img src="img/spa5.jpg" class="img-fluid" alt="Soin du visage">
+          <figcaption class="price">Soin complet Oriental : 180€</figcaption>
+        </figure>
+        <div class="row justify-content-center">
+          <ul class="col-12 col-md-12 text-center pt-3 ulcache" id="ul-spa1">
+            <li>Un soin purifiant au savon noir</li>
+            <li>Un gommage au gant de kessa</li>
+            <li>Un enveloppement riche en minéraux et oligo-éléments</li>
+            <li>Un massage aux huiles d'argan et d'amande douce</li>
+            <li>La traditionnelle épilation au miel</li>
+            <li>Durée du soin : 1 heure</li>
+            <li>Prix : 180€</li>
+          </ul>
+          <a class="btn btn-warning" href="reservation.html" role="button">Réserver</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-5">
+        <h3 class="pt-0">Les soins orientaux</h3>
+        <p>
+          Envie de rompre avec le quotidien et de succomber à la magie de l’Orient en expérimentant ses soins
+          bienfaisants ? Optez pour le savoir-faire ancestral pratiqué au hammam, des secrets de beauté qui se
+          transmettent de mère en fille.
+        </p>
+
+        <h4>Le hammam, un historique lieu de lien social</h4>
+
+        <p>
+          Également appelé bain maure, le bain de vapeur remonte à l'époque gréco-romaine, mais ce n’est qu’après
+          l'avènement de l'Islam au VIIème siècle que les hammams devinrent l'un des éléments essentiels des villes
+          arabo-musulmanes, notamment à proximité des mosquées. Les religieux y voyaient un procédé de purification
+          facilitant la pratique des ablutions avant les prières.
+        </p>
+
+        <p>
+          Ce n'est pas tout, car vous retrouverez également divers soins apportés qui se feront après le retour du
+          Hammam
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ============== Fin première section ================ -->
+
+  <!-- ============== 2 ème section Soin Hydrothérapie ================ -->
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-5">
+        <h3 class="pt-0">Les soins d'hydrothérapie</h3>
+        <h4>Qu'est ce que l'hydrothérapie ?</h4>
+
+        <p>
+          L'hydrothérapie regroupe tous les traitements qui utilisent l'eau à des fins thérapeutiques. Vous découvrirez
+          dans notre SPA ce qu’est l’hydrothérapie, ses principes, ses bienfaits et pleins d’autres choses encore.
+        </p>
+
+        <p>
+          L’hydrothérapie est un traitement basé sur l’utilisation de l'eau, peu importe le type (de mer, de source,
+          minérale, ou même celle du robinet), sous sa forme liquide, mais aussi gazeuse, et à des températures
+          variables. Cela comprend des bains, des douches, des jets, des compresses etc...
+        </p>
+
+        <p>
+          L'aromathérapie et l'herboristerie se combinent fréquemment à l'hydrothérapie par l'ajout d'huiles
+          essentielles ou d'extraits de plantes médicinales dans l'eau de traitement. Le sel d'Epsom et le vinaigre de
+          cidre font également partie des « additifs » courants.
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <figure id="figure-img2-spa">
+          <img src="img/spa6.jpg" class="img-fluid" alt="Soin du visage">
+          <figcaption class="price">Soin complet Hydrothérapie : 190€</figcaption>
+        </figure>
+        <div class="row justify-content-center mb-5">
+          <ul class="col-12 col-md-12 text-center pt-3 ulcache" id="ul-spa2">
+            <li>Un soin purifiant à l'eau de mer</li>
+            <li>Un gommage au sel d'Epsom</li>
+            <li>Un soin de lipomodelage</li>
+            <li>Un massage aux huiles essentielles de Ravintsara et d'Ylang-Ylang</li>
+            <li>Un enveloppement au Thé vert</li>
+            <li>Durée du soin: 1 heure</li>
+            <li>Prix : 190€</li>
+          </ul>
+          <a class="btn btn-warning" href="reservation.html" role="button">Réserver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============== Fin 2 ème section ================ -->
+
+  <!-- ============== footer ================ -->
+  <footer id="footerindex" class="footer table">
+    <div class="container-fluid row">
+      <!-- footer left -->
+      <div class="footer-left col-md-4">
+        <br>
+        <br>
+        <ul class="ulcache list-group">
+          <li>HotelCop</li>
+          <li>+33 1 23 45 67 89</li>
+          <li><a href="mailto:reservation@hotelcop.com">reservation@hotelcop.com</a></li>
+          <li><a href="contact.html" target="_blank">1 avenue Montaigne, 75008 Paris</a></li>
+        </ul>
+        <br>
+        <div class="suivez-nous-btn">
+          <p>
+            <a href="https://www.facebook.com/" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/" class="p-3"><span class="fa fa-twitter"></span></a>
+            <a href="https://www.instagram.com/" class="p-3"><span class="fa fa-instagram"></span></a>
+            <a href="https://vimeo.com/" class="p-3"><span class="fa fa-vimeo"></span></a>
+            <a href="https://www.youtube.com/" class="p-3"><span class="fa fa-youtube-play"></span></a>
+          </p>
+        </div>
+        <br>
+      </div>
+      <!-- footer center -->
+      <div class="footer-center col-md-4">
+        <a href="#">
+          <img src="img/logo-fond.png" alt="logo-fond">
+        </a>
+        <br>
+        <br>
+        <div>
+          <h3>Recevez notre newsletter</h3>
+          <p>Des offres exclusives, des inspirations inédites</p>
+          <input name="EMAIL" placeholder="Votre Adresse E-mail" type="email" style="width: 200px;">
+          <button type="submit" value="submit" style="background-color: #BB9746; color: palegoldenrod;">S'ABONNER</button>
+        </div>
+        <br>
+        <br>
+      </div>
+      <!-- footer right -->
+      <div class="footer-right col-md-4">
+        <div>
+          <br>
+          <br>
+          <ul class="ulcache list-group">
+            <li><a href="recrutement.html" target="_blank">Recrutement</a></li>
+            <li><a href="evenement.html" target="_blank">Événement</a></li>
+            <li><a href="about-us.html" target="_blank">À propos de nous</a></li>
+            <li><a href="presse.html" target="_blank">Presse</a></li>
+            <li><a href="news.html" target="_blank">Actualités</a></li>
+            <li><a href="opinion.html" target="_blank">Avis</a></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row footer-copyright">
+      <p class="col">
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> Tous droits réservés | GAteam |
+      </p>
+    </div>
+    <div class="row footer-law">
+      <div class="col footer-law-link">
+        <ul class="ulcache">
+          <li>
+            <a href="cgv.html" target="_blank">CGV</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="legal-notice.html" target="_blank">MENTIONS LÉGALES</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="site-map.html" target="_blank">PLAN DU SITE</a>
+          </li>
+        </ul>
+        <ul class="ulcache">
+          <li>
+            <a href="#" onclick="javascript:window.print()">IMPRIMER LA PAGE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ============== fin de footer ================ -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
